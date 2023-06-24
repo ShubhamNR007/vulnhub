@@ -1,0 +1,19 @@
+# Nmap 7.93 scan initiated Thu Dec 15 11:14:54 2022 as: nmap -sC -sV -oN initial 10.0.2.11
+Nmap scan report for 10.0.2.11 (10.0.2.11)
+Host is up (0.00038s latency).
+Not shown: 997 closed tcp ports (conn-refused)
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 6.6.1p1 Ubuntu 2ubuntu2.6 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   1024 f54dc8e78bc1b2119524fd0e4c3c3b3b (DSA)
+|   2048 ff19337ac1eeb5d0dc6651daf06efc48 (RSA)
+|   256 aed76fcced4a828be866a5117a115f86 (ECDSA)
+|_  256 71bc6b7b5602a48ece1c8ea61e3a3794 (ED25519)
+80/tcp   open  http    Apache httpd 2.4.7 ((Ubuntu))
+|_http-title: VulnOSv2
+|_http-server-header: Apache/2.4.7 (Ubuntu)
+6667/tcp open  irc     ngircd
+Service Info: Host: irc.example.net; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Dec 15 11:15:13 2022 -- 1 IP address (1 host up) scanned in 18.69 seconds

@@ -1,0 +1,17 @@
+# Nmap 7.93 scan initiated Fri Dec 16 04:04:10 2022 as: nmap -sC -sV -oN initial 10.0.2.12
+Nmap scan report for 10.0.2.12 (10.0.2.12)
+Host is up (0.00045s latency).
+Not shown: 998 filtered tcp ports (no-response)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 5.9p1 Debian 5ubuntu1.8 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   1024 668cc0f2857c6cc0f6ab7d480481c2d4 (DSA)
+|   2048 ba86f5eecc83dfa63ffdc134bb7e62ab (RSA)
+|_  256 a16cfa18da571d332c52e4ec97e29eaf (ECDSA)
+80/tcp open  http    lighttpd 1.4.28
+|_http-title: Site doesn't have a title (text/html).
+|_http-server-header: lighttpd/1.4.28
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Dec 16 04:04:26 2022 -- 1 IP address (1 host up) scanned in 16.23 seconds

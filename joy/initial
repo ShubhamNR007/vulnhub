@@ -1,0 +1,52 @@
+# Nmap 7.93 scan initiated Tue Dec 27 01:20:45 2022 as: nmap -sC -sV -oN initial 10.0.2.22
+Nmap scan report for 10.0.2.22 (10.0.2.22)
+Host is up (0.00036s latency).
+Not shown: 988 closed tcp ports (conn-refused)
+PORT    STATE SERVICE     VERSION
+21/tcp  open  ftp         ProFTPD 1.2.10
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+| drwxrwxr-x   2 ftp      ftp          4096 Jan  6  2019 download
+|_drwxrwxr-x   2 ftp      ftp          4096 Jan 10  2019 upload
+22/tcp  open  ssh         Dropbear sshd 0.34 (protocol 2.0)
+25/tcp  open  smtp        Postfix smtpd
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: commonName=JOY
+| Subject Alternative Name: DNS:JOY
+| Not valid before: 2018-12-23T14:29:24
+|_Not valid after:  2028-12-20T14:29:24
+|_smtp-commands: JOY.localdomain, PIPELINING, SIZE 10240000, VRFY, ETRN, STARTTLS, ENHANCEDSTATUSCODES, 8BITMIME, DSN, SMTPUTF8
+80/tcp  open  http        Apache httpd 2.4.25
+110/tcp open  pop3?
+139/tcp open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+143/tcp open  imap        Dovecot imapd
+445/tcp open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+465/tcp open  smtp        Postfix smtpd
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: commonName=JOY
+| Subject Alternative Name: DNS:JOY
+| Not valid before: 2018-12-23T14:29:24
+|_Not valid after:  2028-12-20T14:29:24
+|_smtp-commands: JOY.localdomain, PIPELINING, SIZE 10240000, VRFY, ETRN, STARTTLS, ENHANCEDSTATUSCODES, 8BITMIME, DSN, SMTPUTF8
+587/tcp open  smtp        Postfix smtpd
+| ssl-cert: Subject: commonName=JOY
+| Subject Alternative Name: DNS:JOY
+| Not valid before: 2018-12-23T14:29:24
+|_Not valid after:  2028-12-20T14:29:24
+|_ssl-date: TLS randomness does not represent time
+|_smtp-commands: JOY.localdomain, PIPELINING, SIZE 10240000, VRFY, ETRN, STARTTLS, ENHANCEDSTATUSCODES, 8BITMIME, DSN, SMTPUTF8
+993/tcp open  ssl/imap    Dovecot imapd
+995/tcp open  ssl/pop3s?
+| fingerprint-strings: 
+|   LDAPSearchReq: 
+|_    -ERR Disconnected: Auth process broken
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port995-TCP:V=7.93%T=SSL%I=7%D=12/27%Time=63AA8F1D%P=x86_64-pc-linux-gn
+SF:u%r(LDAPSearchReq,28,"-ERR\x20Disconnected:\x20Auth\x20process\x20broke
+SF:n\r\n");
+Service Info: Hosts: The,  JOY.localdomain, 127.0.1.1, JOY; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Host script results:
+|_smb2-time: Protocol negotiation failed (SMB2)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Dec 27 01:22:52 2022 -- 1 IP address (1 host up) scanned in 127.41 seconds
